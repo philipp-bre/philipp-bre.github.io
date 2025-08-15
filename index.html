@@ -1,342 +1,308 @@
 <!DOCTYPE html>
 <html lang="en" class="overflow-x-hidden box-border">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="src/tailwind.css">
-  <link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=IM+Fell+English:ital@0;1&family=Kumbh+Sans:wght@700&display=swap"
-    rel="stylesheet">
-  <style>
-    #scroller {
-      -webkit-mask: linear-gradient(90deg, transparent, white 20%);
-      mask: linear-gradient(90deg, transparent, white);
-      width: 1000px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="src/tailwind.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=IM+Fell+English:ital@0;1&family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+    <style>
 
-    }
+      #scroller {
+        -webkit-mask: linear-gradient(90deg, transparent, white 20%);
+        mask: linear-gradient(90deg, transparent, white);
+        width: 1000px;
 
-    #para {
-      font-family: Anybody;
-    }
+      }
+
+        #para {
+          font-family: Anybody;
+        }
 
     #project1:hover {
       cursor: url('images/Group\ 21.svg'), auto;
     }
-
     #project2:hover {
       cursor: url('images/Group\ 21.svg'), auto;
     }
-
     #project3:hover {
       cursor: url('images/Group\ 21.svg'), auto;
     }
 
     .wrapper {
-      width: 90%;
-      margin-bottom: 35px;
-      margin-inline: auto;
-      position: relative;
-      overflow: hidden;
-      mask-image: linear-gradient(to right,
-          rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 1) 20%,
-          rgba(0, 0, 0, 1) 80%,
-          rgba(0, 0, 0, 0));
-    }
+  width: 90%;
+  margin-bottom: 35px;
+  margin-inline: auto;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
 
-    @keyframes scrollLeft {
-      to {
-        left: -200px;
-      }
-    }
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
 
-    .item {
-      position: absolute;
-      left: max(calc(200px * 8), 100%);
-      animation-name: scrollLeft;
-      animation-duration: 30s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-    }
+.item {
+  position: absolute;
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
 
-    .item1 {
-      animation-delay: calc(30s / 8 * (8 - 1) * -1);
-    }
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
 
-    .item2 {
-      animation-delay: calc(30s / 8 * (8 - 2) * -1);
-    }
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
 
-    .item3 {
-      animation-delay: calc(30s / 8 * (8 - 3) * -1);
-    }
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
 
-    .item4 {
-      animation-delay: calc(30s / 8 * (8 - 4) * -1);
-    }
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
 
-    .item5 {
-      animation-delay: calc(30s / 8 * (8 - 5) * -1);
-    }
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
 
-    .item6 {
-      animation-delay: calc(30s / 8 * (8 - 6) * -1);
-    }
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
 
 
-    #selfie {
+  #selfie {
       -webkit-animation: slide-in-blurred-top 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-      animation: slide-in-blurred-top 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-top 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     }
 
     @-webkit-keyframes slide-in-blurred-top {
-      0% {
-        -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-        transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-        -webkit-transform-origin: 50% 0%;
-        transform-origin: 50% 0%;
-        -webkit-filter: blur(40px);
-        filter: blur(40px);
-        opacity: 0;
-      }
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
 
-      100% {
-        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-        transform: translateY(0) scaleY(1) scaleX(1);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-        -webkit-filter: blur(0);
-        filter: blur(0);
-        opacity: 1;
-      }
-    }
 
-    @keyframes slide-in-blurred-top {
-      0% {
-        -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-        transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-        -webkit-transform-origin: 50% 0%;
-        transform-origin: 50% 0%;
-        -webkit-filter: blur(40px);
-        filter: blur(40px);
-        opacity: 0;
-      }
+@keyframes appear {
+            from {
+                opacity: 0;
+                scale: 0.5;
+            }
+            to {
+                opacity:1;
+                scale: 1;
+            }
+        }
 
-      100% {
-        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-        transform: translateY(0) scaleY(1) scaleX(1);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-        -webkit-filter: blur(0);
-        filter: blur(0);
-        opacity: 1;
-      }
-    }
-  </style>
+        .appear {
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+    </style>
 </head>
-
 <body class="overflow-x-hidden flex justify-center flex-col bg-[#1A1A1A]">
   <div class="relative">
-    <div class="absolute pointer-events-none flex">
-      <svg xmlns="http://www.w3.org/2000/svg" width="1104" height="786" viewBox="0 0 1104 786" fill="none">
-        <g opacity="0.7" filter="url(#filter0_f_57_121)">
-          <path
-            d="M69.8458 7.07535C-95.9208 -129.787 71.9267 -315.174 154.239 -385.336C244.542 -462.31 469.121 -459.824 684.9 -265.844C954.624 -23.3698 699.023 335.868 570.652 448.073C442.281 560.277 239.522 395.781 247.289 261.767C255.056 127.753 235.612 143.938 69.8458 7.07535Z"
-            fill="#402D9C" />
-        </g>
-        <defs>
-          <filter id="filter0_f_57_121" x="-300.625" y="-732.518" width="1404.46" height="1517.84"
-            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-            <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_57_121" />
-          </filter>
-        </defs>
-      </svg>
-      <div class="absolute pointer-events-none">
-        <div class="blur-2xl w-100 h-100 opacity-70 bg-[#402D9C] fill-[#402D9C]"></div>
-      </div>
-    </div>
+    <div class="absolute pointer-events-none">
+  <svg xmlns="http://www.w3.org/2000/svg" width="1104" height="786" viewBox="0 0 1104 786"  fill="none">
+  <g opacity="0.7" filter="url(#filter0_f_57_121)">
+    <path d="M69.8458 7.07535C-95.9208 -129.787 71.9267 -315.174 154.239 -385.336C244.542 -462.31 469.121 -459.824 684.9 -265.844C954.624 -23.3698 699.023 335.868 570.652 448.073C442.281 560.277 239.522 395.781 247.289 261.767C255.056 127.753 235.612 143.938 69.8458 7.07535Z" fill="#402D9C"/>
+  </g>
+  <defs>
+    <filter id="filter0_f_57_121" x="-300.625" y="-732.518" width="1404.46" height="1517.84" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_57_121"/>
+    </filter>
+  </defs>
+</svg>
+<div class="absolute pointer-events-none">
+  <div class="blur-2xl w-100 h-100 opacity-70 bg-[#402D9C] fill-[#402D9C]"></div>
+</div>
+</div>
   </div>
-  <nav class="flex justify-center p-3 sm:p-5 md:p-10 lg:p-15 xl:p-20">
-
-    <div class="flex items-center sm:ml-7">
-      <a href="mailto:filip.brezik@email.cz" target="_blank"
-        class="hover:bg-white hover:rounded-3xl hover:transition duration-300 cursor-pointer hover:-translate-y-2 w-10 sm:w-[52px] isolate scale-80 sm:scale-100"><img
-          src="images/Group 1.svg"></a>
-
-      <a href="mailto:filip.brezik@email.cz" target="_blank"
-        class="relative inline-block group text-[#C7C7C7] text-sm sm:text-base ml-2 sm:ml-6">
-        filip.brezik@email.cz
-        <span
-          class="absolute left-0 -bottom-1 w-0 h-0.5 bg-current transition-all duration-500 group-hover:w-full"></span>
-      </a>
-    </div>
-    <div
-      class="flex items-center p-2 sm:px-3 scale-80 sm:scale-100  space-x-3 sm:space-x-4 group ml-2 sm:ml-50 md:ml-60 lg:ml-100 xl:ml-180 2xl:ml-260 2xl:p-0 isolate">
-      <a class="hover:bg-white
+    <nav class="flex justify-center p-3 sm:p-5 md:p-10 lg:p-15 xl:p-20">
+      
+        <div class="flex items-center sm:ml-7">
+            <a href="mailto:filip.brezik@email.cz" target="_blank" class="hover:bg-white hover:rounded-3xl hover:transition duration-300 cursor-pointer hover:-translate-y-2 w-10 sm:w-[52px] isolate scale-80 sm:scale-100"><img src="images/Group 1.svg"></a>
+            
+            <a href="mailto:filip.brezik@email.cz" target="_blank" class="relative inline-block group text-[#C7C7C7] text-sm sm:text-base ml-2 sm:ml-6">
+            filip.brezik@email.cz
+            <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-current transition-all duration-500 group-hover:w-full"></span>
+            </a>
+        </div>
+        <div class="flex items-center p-2 sm:px-3 scale-80 sm:scale-100  space-x-3 sm:space-x-4 group ml-2 sm:ml-50 md:ml-60 lg:ml-100 xl:ml-180 2xl:ml-260 2xl:p-0 isolate">
+          <a class="hover:bg-white
             hover:rounded-3xl hover:transition duration-300 
               cursor-pointer 
-              hover:-translate-y-2" href="https://www.linkedin.com/in/filip-b%C5%99ez%C3%ADk-1a8536146/"
-        target="_blank"><img src="images/Group 3 (2).svg"></a>
-      <a class="hover:bg-white 
+              hover:-translate-y-2" href="https://www.linkedin.com/in/filip-b%C5%99ez%C3%ADk-1a8536146/" target="_blank"><img src="images/Group 3 (2).svg"></a>
+          <a class="hover:bg-white 
               hover:rounded-3xl
               hover:transition duration-300 
               cursor-pointer group 
-              hover:-translate-y-2" href="https://github.com/philipp-bre" target="_blank"><img src="images/Group 4.svg"
-          </a>
-        <a class="hover:bg-white 
+              hover:-translate-y-2" href="https://github.com/philipp-bre" target="_blank"><img src="images/Group 4.svg"</a>
+          <a class="hover:bg-white 
               hover:rounded-3xl hover:transition duration-300 
               cursor-pointer 
-              hover:-translate-y-2" href="https://www.instagram.com/philipp_bre/" target="_blank"><img
-            src="images/Group 5 (1).svg"></a>
-    </div>
-  </nav>
+              hover:-translate-y-2" href="https://www.instagram.com/philipp_bre/" target="_blank"><img src="images/Group 5 (1).svg"></a>
+        </div>
+    </nav>
   <main class="ml-2 place-items-center">
-    </div>
-    <div
-      class="ml-0 sm:px-20 sm:p-5 md:px-60 lg:px-80 xl:px-100 2xl:justify-center  grid justify-center justify-items-center 2xl:justify-items-center   2xl:mr-10 2xl:p-0">
+</div>
+    <div class="ml-0 sm:px-20 sm:p-5 md:px-60 lg:px-80 xl:px-100 2xl:justify-center  grid justify-center justify-items-center 2xl:justify-items-center   2xl:mr-10 2xl:p-0">
       <div class="flex xl:justify-center mb-5">
-        <img src="images/62479e74-21f4-4630-9207-f8b909c6ebad 1.png" id="selfie"
-          class="isolate">
+        <img src="images/62479e74-21f4-4630-9207-f8b909c6ebad 1.png" id="selfie" class="hover:scale-110 transition duration-1000 isolate">
       </div>
       <div>
-        <p class="xl:flex xl:justify-center xl:items-center grid justify-items-center mt-3 text-[#C7C7C7]">Hi, I'm
-          Filip!</p>
+        <p class="xl:flex xl:justify-center xl:items-center grid justify-items-center mt-3 text-[#C7C7C7]">Hi, I'm Filip!</p>
         <p class="xl:flex xl:justify-center xl:items-center mt-3 text-4xl  text-white" id="para">
           <strong class="hover:-translate-y-2 transition duration-100 text-[#443DFF]">F</strong>
           <strong class="hover:-translate-y-2 transition duration-100 text-[#443DFF]">r</strong>
           <strong class="hover:-translate-y-2 transition duration-100 text-[#443DFF]">o</strong>
           <strong class="hover:-translate-y-2 transition duration-100 text-[#443DFF]">n</strong>
-          <strong class="hover:-translate-y-2 transition duration-100 text-[#443DFF]">t</strong>-end
-        </p>
-        <p class="xl:flex xl:justify-center xl:items-center text-4xl text-white grid place-items-center" id="para">
-          Developer</p>
+          <strong class="hover:-translate-y-2 transition duration-100 text-[#443DFF]">t</strong>-end</p>
+        <p class="xl:flex xl:justify-center xl:items-center text-4xl text-white grid place-items-center" id="para">Developer</p>
       </div>
       <div class="flex xl:justify-center">
         <button onclick="scrollButton()" id="para" class="group font-bold flex justify-center items-center p-2 mt-7 w-[195px] bg-white border rounded-3xl mb-20 hover:bg-[#443DFF] hover:text-white hover:border 
-        hover:border-[#443DFF] hover:transition duration-500 cursor-pointer hover:scale-110">Explore <img
-            src="images/arrow.png" class="ml-2 w-[14px]"></button>
+        hover:border-[#443DFF] hover:transition duration-500 cursor-pointer hover:scale-110">Explore <img src="images/arrow.png" class="ml-2 w-[14px]"></button>
       </div>
     </div>
-    <div class="grid mx-auto place-items-center">
-      <hr class="w-[1550px] mx-auto flex border border-[#333]">
+    
+    <hr class="w-[1550px] border border-[#333]">
       <div class="whitespace-nowrap animate-scroll overflow-hidden w-full">
         <div class="wrapper flex gap-20 text-[#333] p-10 will-change-transform max-content">
-          <img src="images/brand-html5.svg"
-            class="item item1 hover:brightness-0 hover:invert transition duration-300" />
-          <img src="images/brand-css3.svg" class="item item2 hover:brightness-0 hover:invert transition duration-300" />
-          <img src="images/Vector.svg"
-            class="item item3 hover:brightness-0 hover:invert transition duration-300 mt-1.5" />
-          <img src="images/brand-javascript.svg"
-            class="item item4 hover:brightness-0 hover:invert transition duration-300" />
-          <img src="images/brand-react.svg"
-            class="item item5 hover:brightness-0 hover:invert transition duration-300" />
-          <img src="images/brand-vscode.svg"
-            class="item item6 hover:brightness-0 hover:invert transition duration-300" />
-          <img src="images/brand-github.svg"
-            class="item item7 hover:brightness-0 hover:invert transition duration-300" />
+          <img src="images/brand-html5.svg" class="item item1 hover:brightness-0 hover:invert transition duration-300"/>
+          <img src="images/brand-css3.svg" class="item item2 hover:brightness-0 hover:invert transition duration-300"/>
+          <img src="images/Vector.svg" class="item item3 hover:brightness-0 hover:invert transition duration-300 mt-1.5"/>
+          <img src="images/brand-javascript.svg" class="item item4 hover:brightness-0 hover:invert transition duration-300"/>
+          <img src="images/brand-react.svg" class="item item5 hover:brightness-0 hover:invert transition duration-300"/>" 
+          <img src="images/brand-vscode.svg" class="item item6 hover:brightness-0 hover:invert transition duration-300"/>
+          <img src="images/brand-github.svg" class="item item7 hover:brightness-0 hover:invert transition duration-300" class=""/>
         </div>
       </div>
-      <hr class="w-[1550px] block mx-auto border border-[#333]">
-    </div>
+    <hr class="w-[1550px] flex border border-[#333]">
   </main>
   <br>
-  <section id="my-section" class="flex justify-center">
-    <div class="px-1 sm:px-33 md:px-43 2xl:justify-center p-10 flex flex-col items-start space-x-10 space-y-10 
-    2xl:flex-row lg:ml-40 xl:ml-82 2xl:mr-0 2xl:ml-20">
-      <div class="group">
-        <a href="https://philipp-bre.github.io/sports-news-page/"
-          class="grid place-items-center w-full overflow-hidden hover:rounded-lg">
-          <img id="project1" src="images/1project.png"
-            class="scale-90 sm:scale-100 object-cover col-start-1 row-start-1 border rounded-xl group-hover:scale-95 sm:group-hover:scale-105 hover:transition duration-500">
-          <div class="col-start-1 row-start-1">
+  <section id="my-section" class="flex justify-center appear">
+    <div class="px-1 sm:px-33 md:px-43 2xl:justify-center p-10 appear flex flex-col items-start space-x-10 space-y-10 
+    2xl:flex-row">
+      <div class="group grid place-items-center w-full">  
+        <a href="https://philipp-bre.github.io/sports-news-page/" class="grid place-items-center w-full overflow-hidden hover:rounded-lg">
+          <img id="project1" src="images/1project.png"  class=" scale-90 sm:scale-100 object-cover col-start-1 row-start-1 
+          border rounded-xl group-hover:scale-95 sm:group-hover:scale-105 hover:transition duration-500"> 
+          <div class="col-start-1 row-start-1 w-50 sm:w-100 mb-20 sm:mb-10">
             <h2 class="text-4xl w-70 mt-60 group-hover:text-[#8783FF] text-white font-[Anybody]  transition duration-500
              row-start-1 col-start-1 scale-z-100 pointer-events-none">Sport News Website</h2>
-            <h6
-              class="text-[#C7C7C7]  group-hover:text-[#8783FF] text-sm transition duration-500 scale-z-100 pointer-events-none">
-              Tools used - HTML5 CSS3 Tailwind CSS JavaScript</h6>
+            <h6 class="text-[#C7C7C7]  group-hover:text-[#8783FF] text-sm transition duration-500 scale-z-100 pointer-events-none">Tools used - HTML5 CSS3 Tailwind CSS JavaScript</h6>
           </div>
         </a>
       </div>
-      <div class="group grid place-items-center w-full">
+      <div class="group grid place-items-center w-full">  
         <a href="#" class="grid place-items-center w-full overflow-hidden hover:rounded-lg">
-          <img id="project2" src="images/Group 24 (1).png"
-            class="object-cover col-start-1 row-start-1 
-          border rounded-xl hover:cursor-crosshair scale-90 sm:scale-100 group-hover:scale-95 sm:group-hover:scale-105 hover:transition duration-500">
+          <img id="project2" src="images/Group 24 (1).png"  class="object-cover col-start-1 row-start-1 
+          border rounded-xl hover:cursor-crosshair scale-90 sm:scale-100 group-hover:scale-95 sm:group-hover:scale-105 hover:transition duration-500"> 
           <div class="col-start-1 row-start-1 w-50 sm:w-100 mb-20 sm:mb-10">
             <h2 class="text-4xl w-70 mt-60 text-white font-[Anybody] group-hover:text-[#8783FF] transition duration-500 
             row-start-1 col-start-1 scale-z-100 pointer-events-none">Marketing Agency <br>Website</h2>
-            <h6
-              class="text-[#C7C7C7] group-hover:text-[#8783FF] transition duration-500 scale-z-100 pointer-events-none">
-              Currently in Development</h6>
+            <h6 class="text-[#C7C7C7] group-hover:text-[#8783FF] transition duration-500 scale-z-100 pointer-events-none">Currently in Development</h6>
           </div>
         </a>
       </div>
-
-      <div class="group grid place-items-center w-full">
+      
+      <div class="group grid place-items-center w-full">  
         <a href="#" class="grid place-items-center  overflow-hidden hover:rounded-lg">
-          <img id="project3" src="images/Group 26 (1).png"
-            class="object-cover col-start-1 row-start-1
-           border rounded-xl hover:cursor-crosshair scale-90 sm:scale-100 group-hover:scale-95 sm:group-hover:scale-105 hover:transition duration-500">
+          <img id="project3" src="images/Group 26 (1).png"  class="object-cover col-start-1 row-start-1
+           border rounded-xl hover:cursor-crosshair scale-90 sm:scale-100 group-hover:scale-95 sm:group-hover:scale-105 hover:transition duration-500"> 
           <div class="col-start-1 row-start-1 w-50 sm:w-100 mb-20 sm:mb-10">
-            <h2
-              class="text-4xl w-70 mt-60 text-white font-[Anybody] 
-            group-hover:text-[#8783FF] transition duration-500 row-start-1 col-start-1 scale-z-100 pointer-events-none">
-              Restaurant Website</h2>
-            <h6
-              class="text-[#C7C7C7] group-hover:text-[#8783FF] transition duration-500 scale-z-100 pointer-events-none">
-              Currently in Development</h6>
+            <h2 class="text-4xl w-70 mt-60 text-white font-[Anybody] 
+            group-hover:text-[#8783FF] transition duration-500 row-start-1 col-start-1 scale-z-100 pointer-events-none">Restaurant Website</h2>
+            <h6 class="text-[#C7C7C7] group-hover:text-[#8783FF] transition duration-500 scale-z-100 pointer-events-none">Currently in Development</h6>
           </div>
         </a>
       </div>
     </div>
   </section>
   <footer class="relative h-screen place-items-center">
-    <div
-      class="absolute pointer-events-none w-100 h-100 bg-purple-700 rounded-full blur-[150px] left-[-100px] top-[-100px]">
+    <div class="absolute pointer-events-none w-100 h-100 bg-purple-700 rounded-full blur-[150px] left-[-100px] top-[-100px]">
     </div>
     <div class="absolute w-100 h-100 bg-purple-700 rounded-full blur-[150px] left-[-100px] top-[-200px]"></div>
     <div class="p-17 sm:p-25 flex justify-center">
       <p class="text-5xl sm:text-7xl w-50 sm:w-100 text-white ml-12 md:ml-5 lg:ml-0" id="para">Let's work together.</p>
-      <div
-        class="space-x-3 gap-5 lg:gap-0 flex flex-col lg:flex-row ml-15 sm:ml-10 sm:mt-5 md:ml-30 lg:ml-62 xl:ml-120 2xl:ml-178 isolate">
-        <a class="hover:bg-white hover:rounded-3xl hover:transition duration-300 cursor-pointer h-13 hover:-translate-y-2 w-[40px] sm:w-[52px]"
-          target="_blank" href="mailto:filip.brezik@email"><img src="images/Group 1.svg"></a>
-        <a class="hover:bg-white hover:rounded-3xl hover:transition duration-300 cursor-pointer h-13 hover:-translate-y-2 w-[40px] sm:w-[52px]"
-          target="_blank" href="https://www.linkedin.com/in/filip-b%C5%99ez%C3%ADk-1a8536146/"><img
-            src="images/Group 3 (2).svg"></a>
-        <a class="hover:bg-white hover:rounded-3xl hover:transition duration-300 cursor-pointer h-13 hover:-translate-y-2 w-[40px] sm:w-[52px]"
-          target="_blank" href="https://github.com/philipp-bre"><img src="images/Group 4.svg"></a>
-        <a class="hover:bg-white hover:rounded-3xl hover:transition duration-300 cursor-pointer h-13 hover:-translate-y-2 w-[40px] sm:w-[52px]"
-          target="_blank" href="https://www.instagram.com/philipp_bre/"><img src="images/Group 5 (1).svg"></a>
-      </div>
+        <div class="space-x-3 gap-5 lg:gap-0 flex flex-col lg:flex-row ml-15 sm:ml-10 sm:mt-5 md:ml-30 lg:ml-62 xl:ml-120 2xl:ml-178 isolate">
+          <a class="hover:bg-white hover:rounded-3xl hover:transition duration-300 cursor-pointer h-13 hover:-translate-y-2 w-[40px] sm:w-[52px]" target="_blank" href="mailto:filip.brezik@email"><img src="images/Group 1.svg"></a> 
+          <a class="hover:bg-white hover:rounded-3xl hover:transition duration-300 cursor-pointer h-13 hover:-translate-y-2 w-[40px] sm:w-[52px]" target="_blank" href="https://www.linkedin.com/in/filip-b%C5%99ez%C3%ADk-1a8536146/"><img src="images/Group 3 (2).svg"></a>
+          <a class="hover:bg-white hover:rounded-3xl hover:transition duration-300 cursor-pointer h-13 hover:-translate-y-2 w-[40px] sm:w-[52px]" target="_blank" href="https://github.com/philipp-bre"><img src="images/Group 4.svg"></a>
+          <a class="hover:bg-white hover:rounded-3xl hover:transition duration-300 cursor-pointer h-13 hover:-translate-y-2 w-[40px] sm:w-[52px]" target="_blank" href="https://www.instagram.com/philipp_bre/"><img src="images/Group 5 (1).svg"></a>
+        </div>
     </div>
     <div class="flex justify-start ml-20 sm:ml-33 lg:mr-60 xl:justify-center xl:ml-75">
       <a href="mailto:filip.brezik@email.cz" class="relative inline-block group text-[#C7C7C7] ml-6 mb-5">
-        filip.brezik@email.cz
-        <span
-          class="absolute left-0 -bottom-1 w-0 h-0.5 bg-current transition-all duration-500 group-hover:w-full"></span>
+          filip.brezik@email.cz
+        <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-current transition-all duration-500 group-hover:w-full"></span>
       </a>
     </div>
-    <br>
-    <div class="grid mx-auto place-items-center">
-      <hr class="w-[1691px] ml-20 border border-[#333]">
-    </div>
-    <br><br><br>
-
+        <br>
+          <hr class="w-[1691px] ml-20 border border-[#333]">
+        <br><br><br>
+        
   </footer>
 
-
-
+  
+  
   </div>
-  <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
-
 </html>
