@@ -156,6 +156,11 @@
             animation-timeline: view();
             animation-range: entry 0% cover 40%;
         }
+
+        .cover-page {
+          width: 400px;
+          height: 550px;
+        }
     </style>
 </head>
 <body class="overflow-x-hidden flex justify-center  flex-col bg-[#1A1A1A]">
@@ -208,7 +213,8 @@
 </div>
     <div class="ml-0 sm:px-20 sm:p-5 md:px-60 lg:px-80 xl:px-100 2xl:justify-center  grid justify-center justify-items-center 2xl:justify-items-center   2xl:mr-10 2xl:p-0">
       <div class="flex xl:justify-center mb-5">
-        <img src="images/62479e74-21f4-4630-9207-f8b909c6ebad 1.png" id="selfie" class="hover:scale-110 transition duration-1000 isolate">
+        <img src="images/62479e74-21f4-4630-9207-f8b909c6ebad 1.png" id="selfie" 
+        class="hover:scale-110 transition duration-1000 isolate">
       </div>
       <div>
         <p class="xl:flex xl:justify-center xl:items-center grid justify-items-center mt-3 text-[#C7C7C7]">Hi, I'm Filip!</p>
@@ -241,40 +247,50 @@
   </main>
   <br>
   <section id="my-section" class="flex justify-center appear">
-    <div class="px-1 sm:px-33 md:px-43 2xl:justify-center p-10 appear flex flex-col items-start space-x-10 space-y-10 
+    <div class="px-1 sm:px-33 md:px-43 2xl:justify-center 
+    p-10 appear flex flex-col items-start space-x-10 space-y-10 
     2xl:flex-row">
       <div class="group grid place-items-center w-full">  
         <a href="https://philipp-bre.github.io/oh.studio-replica/" class="grid place-items-center w-full overflow-hidden hover:rounded-lg">
-          <img id="project1" src="images/oh.studio.png"  class="w-full object-cover col-start-1 row-start-1 
+          <img id="project1" src="images/oh.studio.png"  
+          class="cover-page object-cover col-start-1 row-start-1 
           border rounded-xl hover:cursor-crosshair scale-90 sm:scale-100 group-hover:scale-95 sm:group-hover:scale-105 hover:transition duration-500"> 
-          <div class="col-start-1 row-start-1 w-50 sm:w-100 mb-20 sm:mb-10">
+          <div class="ml-10 col-start-1 row-start-1 w-50 sm:w-100 mb-20 sm:mb-10">
 
             <h2 class="text-4xl w-70 mt-60 text-white font-[Anybody] group-hover:text-[#8783FF] transition duration-500
              row-start-1 col-start-1 scale-z-100 pointer-events-none">OH.STUDIO Landing page - REPLICA</h2>
 
             <h6 class="text-[#C7C7C7] transition duration-500 scale-z-100 
-            pointer-events-none">Used React/JavaScript and Tailwind CSS
-            <br/>taught myself basic Framer Motion animations</h6>
+            pointer-events-none">React/JavaScript + Tailwind CSS
+            <br/>taught myself basic <br/>Framer Motion animations</h6>
           </div>
         </a>
       </div>
       <div class="group grid place-items-center w-full">  
-        <a href="#" class="grid place-items-center w-full overflow-hidden hover:rounded-lg">
-          <img id="project2" src="images/Group 24 (1).png"  class="w-full object-cover col-start-1 row-start-1 
-          border rounded-xl hover:cursor-crosshair scale-90 sm:scale-100 group-hover:scale-95 sm:group-hover:scale-105 hover:transition duration-500"> 
-          <div class="col-start-1 row-start-1 w-50 sm:w-100 mb-20 sm:mb-10">
+        <a href="#" class="grid place-items-center 
+        w-full overflow-hidden hover:rounded-lg">
+          <img id="project2" src="images/Cover Page (4).png"  
+          class="cover-page object-cover col-start-1 row-start-1 
+          border rounded-xl hover:cursor-crosshair 
+          scale-90 sm:scale-100 group-hover:scale-95 sm:group-hover:scale-105
+           hover:transition duration-500"> 
+          <div class="ml-10 col-start-1 row-start-1 w-50 sm:w-100 mb-20 sm:mb-10">
             <h2 class="text-4xl w-70 mt-60 text-white font-[Anybody] group-hover:text-[#8783FF] transition duration-500 
-            row-start-1 col-start-1 scale-z-100 pointer-events-none">Marketing Agency <br>Website</h2>
-            <h6 class="text-[#C7C7C7]  transition duration-500 scale-z-100 pointer-events-none">Currently in Development</h6>
+            row-start-1 col-start-1 scale-z-100 pointer-events-none">Starbucks Rewards<br/>Page</h2>
+            <h6 class="text-[#C7C7C7] w-[10%]  transition duration-500 scale-z-100 pointer-events-none">
+              React/TypeScript + Tailwind CSS with added 
+              Framer Motion animations that aren't on the official website</h6>
           </div>
         </a>
       </div>
       
       <div class="group grid place-items-center w-full">  
         <a href="#" class="grid place-items-center w-full overflow-hidden hover:rounded-lg">
-          <img id="project3" src="images/Group 26 (1).png"  class="w-full h-80 object-cover col-start-1 row-start-1
+          <img id="project3" src="images/Group 26 (1).png"  
+          class="cover-page h-80 object-cover col-start-1 row-start-1
            border rounded-xl hover:cursor-crosshair scale-90 sm:scale-100 group-hover:scale-95 sm:group-hover:scale-105 hover:transition duration-500"> 
-          <div class="col-start-1 row-start-1 w-50 sm:w-100 mb-20 sm:mb-10">
+          <div class="col-start-1 row-start-1 
+          ml-10 w-50 sm:w-100 mb-20 sm:mb-10">
             <h2 class="text-4xl w-70 mt-60 text-white font-[Anybody] 
             group-hover:text-[#8783FF] transition duration-500 row-start-1 col-start-1 scale-z-100 pointer-events-none">Restaurant Website</h2>
             <h6 class="text-[#C7C7C7] transition duration-500 scale-z-100 pointer-events-none">Currently in Development</h6>
